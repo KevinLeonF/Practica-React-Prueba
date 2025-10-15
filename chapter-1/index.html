@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Práctica 3 - Capítulo 1 (JS puro)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Registro de Personas (JS puro)</h1>
+
+    <form id="person-form">
+      <input id="name" placeholder="Nombre" required />
+      <input id="email" placeholder="Email" type="email" required />
+      <input id="phone" placeholder="Teléfono" required />
+      <button type="submit">Guardar</button>
+      <button type="button" id="cancel-edit" style="display:none;">Cancelar</button>
+    </form>
+
+    <table id="people-table" border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr><th>Nombre</th><th>Email</th><th>Teléfono</th><th>Acciones</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
